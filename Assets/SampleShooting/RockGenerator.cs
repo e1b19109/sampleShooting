@@ -9,12 +9,12 @@ public class RockGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("GenRock", 10, 1);
+        InvokeRepeating("GenRock", 1, 1);
     }
 
     // Update is called once per frame
     void GenRock()
     {
-        Instantiate(rockPrefab, new Vector3 (-2.5f + 5 * Random.value, 6, 0), Quaternion.identity);
+        Instantiate(rockPrefab, new Vector3 (-9f + 16 * Random.value, 6, 0), Quaternion.identity);
     }
 }
