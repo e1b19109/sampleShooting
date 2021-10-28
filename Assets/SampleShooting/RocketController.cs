@@ -17,4 +17,15 @@ public class RocketController : MonoBehaviour {
 			Instantiate (bulletPrefab, transform.position, Quaternion.identity);
 		}
 	}
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Rock")
+        {
+            Destroy(coll.gameObject);
+            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
+            Destroy(gameObject);
+        }
+
+    }
 }
