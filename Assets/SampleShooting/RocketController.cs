@@ -26,6 +26,10 @@ public class RocketController : MonoBehaviour {
             GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
             Destroy(gameObject);
         }
-
+	if (coll.gameObject.tag == "item")
+        {
+            Destroy(coll.gameObject);
+            
+        }
     }
 }
