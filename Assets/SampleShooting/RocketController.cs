@@ -19,6 +19,7 @@ public class RocketController : MonoBehaviour {
             if (i > 0)
             {
                 Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                GameObject.Find("Canvas").GetComponent<UIController>().ReduceBullet();
                 i--;
             }
             else {
@@ -37,6 +38,7 @@ public class RocketController : MonoBehaviour {
         }
 	if (coll.gameObject.tag == "item")
         {
+            GameObject.Find("Canvas").GetComponent<UIController>().AddBullet();
             i += 5;
             Destroy(coll.gameObject);
         }
