@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rock
   - item
+  - Gem
   layers:
   - Default
   - TransparentFX
