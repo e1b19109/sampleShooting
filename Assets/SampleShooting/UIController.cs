@@ -21,6 +21,11 @@ public class UIController : MonoBehaviour
         this.score += 10;
     }
 
+    public void GemAddScore()
+    {
+	this.score += 50;
+    }
+
     public void ReduceBullet()
     {
         if (bullet > 0)
