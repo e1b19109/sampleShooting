@@ -31,6 +31,18 @@ public class BulletController : MonoBehaviour
                 Destroy(coll.gameObject);
                 Destroy(gameObject);
             }
+	    if (coll.gameObject.tag == "Gem")
+            {
+                // 衝突したときにスコアを更新する
+                GameObject.Find("Canvas").GetComponent<UIController>().GemAddScore();
+
+                // 爆発エフェクトを生成する	
+                GameObject effect = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
+                Destroy(effect, 1.0f);
+
+                Destroy(coll.gameObject);
+                Destroy(gameObject);
+            }
         
     }
 }
