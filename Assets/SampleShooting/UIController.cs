@@ -11,11 +11,14 @@ public class UIController : MonoBehaviour
     GameObject scoreText;
     GameObject gameOverText;
     GameObject bulletText;
+    public bool gameFinish = false;
+    
 
     public void GameOver()
     {
         // this.gameOverText.GetComponent<Text>().text = "GameOver";
         gameOverText.SetActive(true);
+        gameFinish = true;
     }
 
     public void AddScore()
