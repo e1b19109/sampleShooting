@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class RocketController : MonoBehaviour {
 
 	public GameObject bulletPrefab;
-    int i = 10;
+    public int i = 10;
 
 	void Update () {
 		if (Input.GetKey (KeyCode.LeftArrow)&transform.position.x > -9.0f) {
