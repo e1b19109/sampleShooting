@@ -13,6 +13,11 @@ public class RockGenerator : MonoBehaviour
     {
 
         InvokeRepeating("GenRock", 1, 1);
+	InvokeRepeating("GenRock", 10, 1);
+	InvokeRepeating("GenRock", 20, 1);
+	InvokeRepeating("GenRock", 30, 1);
+	InvokeRepeating("GenRock", 40, 1);
+	InvokeRepeating("GenRock", 50, 1);
         canvas = GameObject.Find("Canvas");
         Debug.Log(canvas);
         gameFinish1 = canvas.GetComponent<UIController>();
@@ -25,6 +30,6 @@ public class RockGenerator : MonoBehaviour
         {
             return;
         }
-        Instantiate(rockPrefab, new Vector3 (-9f + 16 * Random.value, 6, 0), Quaternion.identity);
+        Instantiate(rockPrefab, new Vector3 (-9f + 20 * Random.value, 6, 0), Quaternion.identity);
     }
 }
