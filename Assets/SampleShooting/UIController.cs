@@ -11,6 +11,7 @@ public class UIController : MonoBehaviour
     GameObject scoreText;
     GameObject gameOverText;
     GameObject bulletText;
+    GameObject resultText;
     public bool gameFinish = false;
     
 
@@ -54,7 +55,10 @@ public class UIController : MonoBehaviour
         this.scoreText = GameObject.Find("Score");
         this.gameOverText = GameObject.Find("Panel");
         this.bulletText = GameObject.Find("Bullet");
+        this.resultText = GameObject.Find("Result");
         gameOverText.SetActive(false);
+        resultText.SetActive(false);
+    
     }
 
     void Update()
@@ -63,6 +67,10 @@ public class UIController : MonoBehaviour
         bulletText.GetComponent<Text>().text = "écíeêîÅ®" + bullet.ToString("D3");
         if (gameOverText.activeSelf == true)
         {
+            bulletText.SetActive(false);
+            scoreText.SetActive(false);
+            resultText.GetComponent<Text>().text = "YourScore  " + score.ToString("D4");
+            resultText.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 SceneManager.LoadScene("SampleScene");
