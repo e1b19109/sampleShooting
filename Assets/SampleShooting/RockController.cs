@@ -10,7 +10,7 @@ public class RockController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.fallSpeed = 0.01f + 0.1f * Random.value;
+        this.fallSpeed = 0.01f + 0.01f * Random.value;
         this.rotSpeed = 5f + 3f * Random.value;
     }
 
