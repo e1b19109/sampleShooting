@@ -269,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 286638203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 818aff00f1832b2448f156e76e217d4b, type: 3}
+  m_Script: {fileID: 11500000, guid: c26a2714d0cee2c49a286e71a5648d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rockPrefab: {fileID: 9070262351915687296, guid: 03ae0711d7b4c1e41b7e53355f2577cb, type: 3}
@@ -525,6 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a599823038e034b830617188969b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameFinish: 0
 --- !u!114 &704118158
 MonoBehaviour:
   m_ObjectHideFlags: 0

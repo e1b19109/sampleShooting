@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockController : MonoBehaviour
+public class GenController : MonoBehaviour
 {
     float fallSpeed;
     float rotSpeed;
@@ -10,7 +10,7 @@ public class RockController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.fallSpeed = 0.01f + 0.1f * Random.value;
+        this.fallSpeed = 0.01f + 0.01f * Random.value;
         this.rotSpeed = 5f + 3f * Random.value;
     }
 
