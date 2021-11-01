@@ -13,6 +13,7 @@ public class RockGenerator : MonoBehaviour
     {
 
         InvokeRepeating("GenRock", 1, 1);
+        InvokeRepeating("GenRock", 1, 1);
 	InvokeRepeating("GenRock", 10, 1);
 	InvokeRepeating("GenRock", 20, 1);
 	InvokeRepeating("GenRock", 30, 1);
