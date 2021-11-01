@@ -11,7 +11,7 @@ public class itemGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("GenRock", 6, 5);
+        InvokeRepeating("GenRock", 15, 8);
         canvas = GameObject.Find("Canvas");
         Debug.Log(canvas);
         gameFinish1 = canvas.GetComponent<UIController>();
